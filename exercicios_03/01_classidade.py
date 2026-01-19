@@ -1,0 +1,23 @@
+'''
+1- Classificador de Idade
+
+Crie um programa que solicite a idade do usuário e classifique-o em uma das seguintes categorias:
+
+- Criança (0-12 anos),
+- Adolescente (13-17 anos),
+- Adulto (18-59 anos) ou
+- Idoso (60 anos ou mais).
+'''
+
+idade = int(input("Digite a sua idade: "))
+if idade >= 60:
+    classificacao = "Idoso"
+elif idade >= 18:
+    classificacao = "Adulto"
+elif idade >= 13:
+    classificacao = "Adolescente"
+elif idade >= 0:
+    classificacao = "Criança"
+else:
+    classificacao = "Idade inválida"
+print(f"Classificação: {classificacao}")
